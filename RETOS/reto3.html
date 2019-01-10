@@ -7,11 +7,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <style>
+        div[class^='col']{
+            background-color: red;
+            height: 100px;
+            border:solid white 1px;
+            color: white;
+        }
+    </style>
+    <title>Reto 3</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Reto 3</h1>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col col-md-6 offset-md-6">Fila 1/Col 1</div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-md-2">Fila 1/Col 1</div>
+        </div>
+        <div class="row">
+            <div class="col-3 offset-9 col-md-3 offset-md-0">Fila 1/Col 1</div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
