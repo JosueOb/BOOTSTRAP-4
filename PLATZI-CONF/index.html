@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+                        <a class="nav-link text-platzi" href="#" data-target="#modalCompra" data-toggle="modal">Comprar tickets</a>
                     </li>
                     </ul>
                 </div>
@@ -63,7 +63,7 @@
                             <h1>PLatzi Conf Hawaii</h1>
                             <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam, animi, expedita in maxime itaque porro neque, impedit fuga illum voluptas numquam exercitationem nulla. Vitae inventore nostrum odit alias natus.</p>
                             <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
-                            <button type="button" class="btn btn-platzi">Comprar tickets</button>
+                            <button type="button" class="btn btn-platzi" data-toggle="modal" data-target="#modalCompra">Comprar tickets</button>
                         </div>
                     </div>
                 </div>
@@ -222,6 +222,43 @@
         </div>
     </footer>
     <!-- /Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Comprar Ticket</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                  <div class="form-row">
+                      <div class="form-group col">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                  </div>
+              </form>
+              <div class="alert alert-warning" role="alert">
+                Recibirás un correo de confirmación si sales sorteado 
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-platzi">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- /Modal -->
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
